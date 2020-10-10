@@ -6,19 +6,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      
-      home: Scaffold(
-        body: MyStatefulWidget(),
-      ),
-    );
+    return MyStatefulWidget();
+   
   }
 }
 
 enum BestTutorSite { javatpoint, w3schools, tutorialandexample }
 
-class MyStatefulWidget extends StatefulWidget {
+class  MyStatefulWidget extends StatefulWidget {
   MyStatefulWidget({Key key}) : super(key: key);
 
   @override
