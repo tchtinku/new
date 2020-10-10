@@ -20,7 +20,9 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   void bottomSheet(BuildContext context) {
-    showModalBottomSheet(
+    showModalBottomSheet( enableDrag: true, 
+    isDismissible: true,
+    isScrollControlled: true,
         backgroundColor: Colors.transparent,
         context: context,
         builder: (ctx) {
